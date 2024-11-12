@@ -1,0 +1,38 @@
+**Log on to codeastro.com for more projects!***
+
+**Database Name: rposystem**
+
+**Developed by Martin Mbithi Nzilani**
+
+**Recommended PHP Version 7.4**
+
+
+**Admin Login Details**
+
+Email	: system@mail.com
+Password: system
+
+tables
+... 
+daily_record(d_id,income,expense,profit,date).
+reservations(id,name,email,phone,num_guests,reservation_date,reservation_time,special_requests,pre_choose,reserve_status).
+food_category(f_id,category_name,status,category_image).
+tables(TableID,SeatingCapacity,Description,IsAvailable).
+transaction (tid,tableId,t_total,payment_status,tran_date)
+tableId is foreign key from tables.
+selection_order (s_id,t_id,r_id,food_id,food_name,quantity,date)
+t_id is foreign key from transaction,r_id is foreign key from reservation,food_id is foreign key from foods
+
+foods(food_id,f_id,food_price,image,status)
+f_id is foreign key from food_category.
+
+
+SELECT sum(i.unit_price) from inventory  i
+join inventory_use iu on i.item_id=iu.item_id
+WHERE iu.qty_date='2024-07-25'
+
+
+
+
+
+

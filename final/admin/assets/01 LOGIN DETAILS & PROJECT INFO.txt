@@ -1,0 +1,6 @@
+**Admin Login Details**
+
+Email	: system@email.com
+Password: system
+
+
